@@ -1,49 +1,49 @@
-# PIC24 I2C Library
+# PIC24 I2C 库
 
-This is a lightweight I2C (Inter-Integrated Circuit) library for PIC24 microcontrollers, designed to interface with EEPROMs like the 24LC256. The library has been tested in Proteus and can be used for various I2C-based peripherals.
+这是一个用于 PIC24 微控制器的轻量级 I2C（集成电路）库，设计用于连接 EEPROM（如 24LC256）。该库已在 Proteus 中进行了测试，可用于各种基于 I2C 的外设。
 
-## Features
+## 特性
 
-- Supports I2C read and write operations
-- Compatible with 24LC256 EEPROM (can be extended to other I2C devices)
-- Written in C for MPLAB XC16
-- Tested in Proteus for verification
+- 支持 I2C 读写操作
+- 与 24LC256 EEPROM 兼容（可扩展至其他 I2C 设备）
+- 使用 MPLAB XC16 的 C 语言编写
+- 已在 Proteus 中测试验证
 
-## Requirements
+## 要求
 
-- **Hardware**
-  - **PIC24F16KA102** *(or any compatible PIC24 microcontroller)* - development platform.
-  - **24LC256** *(or similar I2C device)* - i2c device.
-- **Software**
-  - **MPLAB X** - integrated development environment (IDE) for PIC microcontrollers.
-  - **XC16 Compiler** - C compiler for PIC24.
-  - **Proteus** *(Optional)* - for testing.
+- **硬件**
+  - **PIC24F16KA102** *（或任何兼容的 PIC24 微控制器）* - 开发平台。
+  - **24LC256** *（或类似的 I2C 设备）* - i2c 设备。
+- **软件**
+  - **MPLAB X** - 用于 PIC 微控制器的集成开发环境 (IDE)。
+  - **XC16 编译器** - 用于 PIC24 的 C 编译器。
+  - **Proteus** *（可选）* - 用于测试。
 
-## IO Ports
+## IO 端口
 
-| PIC24 Pin | Function | Connected Device | Description               |
-| --------- | -------- | ---------------- | ------------------------- |
-| RB0       | GPIO     | LED              | Controls an indicator LED |
-| RB8       | I2C SCL  | 24LC256          | I2C clock                 |
-| RB9       | I2C SDA  | 24LC256          | I2C data                  |
+| PIC24 引脚 | 功能    | 连接设备 | 说明            |
+| ---------- | ------- | -------- | --------------- |
+| RB0        | GPIO    | LED      | 控制 LED 指示灯 |
+| RB8        | I2C SCL | 24LC256  | I2C 时钟        |
+| RB9        | I2C SDA | 24LC256  | I2C 数据        |
 
-## Source Files
+## 源文件
 
-- `main.c` - The primary application logic.
-- `led.h` & `led.c` - LED control, useful for debugging.
-- `clock.h` & `clock.c` - Clock initialization and time delay.
-- `i2c.h` & `i2c.c` - I2C library.
+- `main.c` - 主要应用逻辑。
+- `led.h` & `led.c` - LED 控制，用于调试。
+- `clock.h` & `clock.c` - 时钟初始化和延时。
+- `i2c.h` & `i2c.c` - I2C 库。
 
-## To-Do List
+## 待办事项列表
 
-  - Add error handling mechanism.
+  - 添加错误处理机制。
 
-## Author Information
+## 作者信息
 
-  - **Author**: Yiqi Wei
-  - **Affiliation**: Shanghai Jiao Tong University
-  - **Contact**: yiqiwei4536@gmail.com
+  - **作者**： 卫屹棋
+  - **工作单位**： 上海交通大学
+  - **联系方式**: yiqiwei4536@gmail.com
 
 ## References
 
-- [PIC24F16KA102 Family Data Sheet](https://ww1.microchip.com/downloads/en/DeviceDoc/39927c.pdf)
+- [PIC24F16KA102 数据手册](https://ww1.microchip.com/downloads/en/DeviceDoc/39927c.pdf)
